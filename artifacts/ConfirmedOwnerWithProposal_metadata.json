@@ -1,0 +1,143 @@
+{
+	"compiler": {
+		"version": "0.8.16+commit.07a7930e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					},
+					{
+						"internalType": "address",
+						"name": "pendingOwner",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferRequested",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "from",
+						"type": "address"
+					},
+					{
+						"indexed": true,
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "OwnershipTransferred",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "acceptOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "to",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {
+				"acceptOwnership()": {
+					"notice": "Allows an ownership transfer to be completed by the recipient."
+				},
+				"owner()": {
+					"notice": "Get the current owner"
+				},
+				"transferOwnership(address)": {
+					"notice": "Allows an owner to begin transferring ownership to a new address, pending."
+				}
+			},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"exit-liquidity-coingecko-api/confirmedowner.sol": "ConfirmedOwnerWithProposal"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"exit-liquidity-coingecko-api/confirmedowner.sol": {
+			"keccak256": "0xe07bb7d847b9b58f17745032e86bedf10899920fe0a481ee59abdf07db2785bf",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://2e0c7bba0e7c8961f87d8fed342d162b9a3e048ae8a2e1675a2d7acc97a07904",
+				"dweb:/ipfs/QmbjMKekmmsq6hHE8NveqZLyenj5QPHs6JRDPX3yN6sBiK"
+			]
+		}
+	},
+	"version": 1
+}
