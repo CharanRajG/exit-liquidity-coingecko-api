@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+.App-header{
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+  margin-top: 15px;
+  /* border-bottom: 1px solid #ff5656;
+  box-shadow: 0 3px 6px #ff5656; */
+}
+
+body{
+  background: #dfe6eb;
+  margin: 0;
+}
+
+.walletbutton{
+  margin-bottom: 15px;
+
+}
